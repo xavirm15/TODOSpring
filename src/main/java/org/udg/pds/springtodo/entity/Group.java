@@ -6,6 +6,7 @@ import java.io.Serializable;
 import java.util.Collection;
 
 @Entity(name="usergroup")
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = {"name"}))
 public class Group implements Serializable{
 
     public Group (){
